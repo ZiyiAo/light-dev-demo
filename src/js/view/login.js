@@ -22,8 +22,16 @@
 			var passwd=this.$el.find("[type=password]").val();
 
 			if(name&&passwd){
-				alert("开始登录处理");
 				App.loading();
+				API.login({
+					name:name,
+					passwd:passwd
+				},function(data){
+					if(data.err_no==0){
+						App.unLoading();
+						App.navigate("loginS");
+					}
+				})
 			}else{
 				alert("用户名或者密码不能为空！");
 			}
