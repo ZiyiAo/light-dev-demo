@@ -21,7 +21,11 @@
 		next:function(){
 			var captcha = this.$el.find("[type=text]");
 			if(captcha){
-				App.navigate("reginfo");
+				if(App.reginfoView){
+					App.navigate("reginfo");
+				}else{
+					App.navigate("resetpw");
+				}
 			}else{
 				alert("请先输入验证码！");
 			}

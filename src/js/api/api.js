@@ -10,6 +10,9 @@
     reg:function(params,callback){
       callback(params);
     },
+    reset:function(params,callback){
+      callback(params);
+    },
     _execute:function(url,params,callback){
       $.get(url,params,callback);
     }      
