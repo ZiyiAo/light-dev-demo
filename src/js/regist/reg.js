@@ -9,6 +9,11 @@ App.registView("captcha",new App.AsyncView({
 	model:new App.Model()
 }),false);
 
+App.registView("reginfo",new App.View({
+  el:"#reginfo",
+  model:new App.Model()
+}),false);
+
 App.registView("regS",new App.View({
 	el:"#regS",
 	model:new App.Model()

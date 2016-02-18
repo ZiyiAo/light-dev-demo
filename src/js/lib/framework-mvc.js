@@ -631,6 +631,7 @@
 					return this;
 				},
 		render : function(param, context) {
+			if(!this.resource) this.resource=new Resource(this.id);
 			if(this.resource.isCompleted()){
 				_render(param,context);
 			}else{
