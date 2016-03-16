@@ -2,13 +2,5 @@
 	"project":"$name$",
 	"version":"0.0.1",
 	"desc":"$desc$",
-	"package":{
-	   "icons": {
-		  "screenshots":[
-			"icons/a.png",
-			"icons/b.png"
-		  ],
-		  "main":"icons/$name$.png"
-		}
-	}
+	"ignore":["icons/"]
 }
