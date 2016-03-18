@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-  <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
-  <meta content="telephone=no,email=no" name="format-detection" />
-  <link rel="apple-touch-icon-precomposed" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico" />
-  <meta name="Keywords" content=""/>
-  <meta name="description" content=""/>
-
+  <snippet id="header" />
+  <link rel="stylesheet" href="//light.hs.net/apps/base/f7/css/framework7.ios.min.css">
+  
   <!-- build:css css/style.css -->
-  <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- endbuild -->
-  <title></title>
+  
+  <title>$name$-$desc$</title>
 </head>
 <body>
-  <div ng-view class="animated fadeIn"></div>
-  <script src="//light.hs.net/apps/base/js/angular.min.js"></script>
-  <script src="//light.hs.net/apps/base/js/angular-route.min.js"></script>
+  <div class="panel-overlay"></div>
+
+  <snippet id="left-panel" />
+  <snippet id="right-panel" />
+
+  <div class="views">
+    <div class="view view-main">
+    
+      <!-- 顶部导航栏-->
+      <snippet id="navbar" />
+
+      <div class="pages navbar-through toolbar-through">
+        <snippet id="index" />
+      </div>
+
+      <!-- 底部工具栏-->
+      <snippet id="toolbar" />      
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//light.hs.net/apps/base/f7/js/framework7.min.js"></script>
 
   <!-- build:js js/login.js -->
   <script src="js/main.js"></script>
   <script src="js/api.js"></script>
-  <script src="js/controller/index.js"></script>
+  <script src="js/controller/about.js"></script>
   <!-- endbuild -->
 </body>
 </html>
