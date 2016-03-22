@@ -5,7 +5,7 @@
         $routeProvider
             .when('/', {
                 controller: 'index',
-                templateUrl: 'view/index.html'
+                templateUrl: 'html/view/index.html'
             })
             .otherwise({
                 redirectTo: '/'

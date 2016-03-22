@@ -6,9 +6,8 @@
     function _execute(func,params,callback){
       $http({
         method:'GET',
-        url:prefix+func+".do",
+        url:"",
         params:angular.extend(params,{
-          authUserId:14717
         })
       }).success(callback);
     }

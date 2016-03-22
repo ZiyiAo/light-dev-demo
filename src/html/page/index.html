@@ -13,19 +13,20 @@
 
   <!-- build:css css/style.css -->
   <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.less" />
   <!-- endbuild -->
+
   <title></title>
 </head>
 <body>
-  <div ng-view class="animated fadeIn"></div>
+  <div ng-view class="animated fadeIn" >
+    <view id="light" type="angular" />
+  </div>
   <script src="//light.hs.net/apps/base/js/angular.min.js"></script>
   <script src="//light.hs.net/apps/base/js/angular-route.min.js"></script>
 
-  <!-- build:js js/login.js -->
-  <script src="js/main.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/controller/index.js"></script>
+  <!-- build:js js/app.js -->
+  <script src="js/api/api.js"></script>
   <!-- endbuild -->
 </body>
 </html>
