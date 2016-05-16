@@ -1,20 +1,5 @@
 {
 	"project":"light_dev_demo",
 	"version":"0.0.1",
-	"desc":"light_dev_demo.",
-	"release":{
-		"js/app.js":["js/lib/underscore.js","js/lib/zepto.js","js/lib/backbone.js","js/lib/framework-mvc.js","js/lib/framework-tool.js"]
-	},
-	"package":{
-	   "icons": {
-		  "screenshots":[
-			"icons/a.png",
-			"icons/b.png"
-		  ],
-		  "main":"icons/demo.png"
-		},
-		"key": "",
-		"manifest_version": 2,
-		"name_cn": ""
-	}
+	"desc":"light_dev_demo."
 }

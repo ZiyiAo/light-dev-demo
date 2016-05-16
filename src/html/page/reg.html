@@ -16,14 +16,16 @@
   <snippet id="footer" />
 </body>
 
-  <script type="text/javascript" src="js/app.js"></script>
-
-  <!-- build:js scripts/combined-reg.js -->
+ <!-- build:js scripts/combined-login.js -->
+  <script type="text/javascript" src="js/lib/zepto.js"></script>
+  <script type="text/javascript" src="js/lib/underscore.js"></script>
+  <script type="text/javascript" src="js/lib/backbone.js"></script>
+  <script type="text/javascript" src="js/lib/framework-mvc.js"></script>
   <script type="text/javascript" src="js/api/api.js"></script>
-  <script type="text/javascript" src="js/regist/reg.js"></script>
-  <script type="text/javascript" src="js/view/reg.js"></script>
-  <script type="text/javascript" src="js/view/reginfo.js"></script>
-  <script type="text/javascript" src="js/view/reg/success.js"></script>
+  
+  <!-- inject:view -->
+  <!-- endinject -->
+
   <!-- endbuild -->
 
   <script type="text/javascript">
