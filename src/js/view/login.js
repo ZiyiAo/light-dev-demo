@@ -10,6 +10,8 @@
 		},
 		beforeRender:function(){
 			//TODO
+
+			this.$el.find(".footer").append(App.t1Template());
 			return true;
 		},
 		ready:function(){
