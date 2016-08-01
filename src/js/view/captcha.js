@@ -10,6 +10,7 @@
 		},
 		beforeRender:function(){
 			//TODO
+			document.getElementById('')
 			return true;
 		},
 		ready:function(){

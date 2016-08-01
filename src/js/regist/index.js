@@ -5,8 +5,8 @@ App.registView("login",new App.View({
   model:new App.Model()
 }),true);
 
-App.registView("login/success",new App.View({
-  el:"#login/success",
+App.registView("loginSuccess",new App.View({
+  el:"#loginSuccess",
   model:new App.Model()
 }),false);
 

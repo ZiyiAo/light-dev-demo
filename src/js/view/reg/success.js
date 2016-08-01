@@ -1,18 +1,23 @@
+
 /**
- * VIEW regS
+ * VIEW regSuccess
  * @param  {[type]} $ [description]
  * @return {[type]}   [description]
  */
 ;(function(){
-	App.regSView.wrap({
-		beforeRender:function(){
-			//TODO
-			return true;
-		},
-		ready:function(){
-			//TODO
-		},
-		afterUnRender:function(){
-		}
-	});
+  App.regSuccessView.wrap({
+    beforeRender:function(){
+      //TODO
+      setTimeout(function() {
+        App.navigate('index',true);
+      }, 3000);
+      return true;
+    },
+    ready:function(){
+      //TODO
+    },
+    afterUnRender:function(){
+    }
+  });
 })();
+      

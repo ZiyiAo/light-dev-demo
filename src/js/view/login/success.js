@@ -1,18 +1,20 @@
+
 /**
- * VIEW loginS
+ * VIEW loginSuccess
  * @param  {[type]} $ [description]
  * @return {[type]}   [description]
  */
 ;(function(){
-	App.loginSView.wrap({
-		beforeRender:function(){
-			//TODO
-			return true;
-		},
-		ready:function(){
-			//TODO
-		},
-		afterUnRender:function(){
-		}
-	});
+  App.loginSuccessView.wrap({
+    beforeRender:function(){
+      //TODO
+      return true;
+    },
+    ready:function(){
+      //TODO
+    },
+    afterUnRender:function(){
+    }
+  });
 })();
+      

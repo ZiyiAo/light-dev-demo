@@ -15,8 +15,8 @@ App.registView("reginfo",new App.View({
   model:new App.Model()
 }),false);
 
-App.registView("reg/success",new App.View({
-  el:"#reg/success",
+App.registView("regSuccess",new App.View({
+  el:"#regSuccess",
   model:new App.Model()
 }),false);
 

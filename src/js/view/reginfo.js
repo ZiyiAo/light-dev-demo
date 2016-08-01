@@ -29,7 +29,7 @@
 						password:password,
 						account:App.regView.account
 					},function(data){
-						App.navigate("regS");
+						App.navigate("regSuccess");
 					})
 				}else{
 					alert("请检查您输入的密码！");

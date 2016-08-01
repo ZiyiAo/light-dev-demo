@@ -26,7 +26,7 @@
 					password:password,
 					account:App.resetView.account
 				},function(data){
-					App.navigate("resetS");
+					App.navigate("resetSuccess");
 				})
 			}else{
 				alert("请检查您输入的密码！");

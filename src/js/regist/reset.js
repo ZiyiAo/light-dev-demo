@@ -15,8 +15,8 @@ App.registView("resetpw",new App.View({
   model:new App.Model()
 }),false);
 
-App.registView("reset/success",new App.View({
-  el:"#reset/success",
+App.registView("resetSuccess",new App.View({
+  el:"#resetSuccess",
   model:new App.Model()
 }),false);
 

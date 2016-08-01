@@ -10,7 +10,6 @@
 		},
 		beforeRender:function(){
 			//TODO
-
 			this.$el.find(".footer").append(App.t1Template());
 			return true;
 		},
@@ -18,6 +17,9 @@
 			//TODO
 		},
 		afterUnRender:function(){
+			this.$el.find(".footer").find('#template').remove();
+			this.$el.find("[type=text]").val('');
+			this.$el.find("[type=password]").val('');
 		},
 		login:function(){
 			var name=this.$el.find("[type=text]").val();
@@ -31,7 +33,7 @@
 				},function(data){
 					if(data.err_no==0){
 						App.unLoading();
-						App.navigate("loginS");
+						App.navigate("loginSuccess");
 					}
 				})
 			}else{
